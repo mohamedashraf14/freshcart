@@ -27916,7 +27916,7 @@
         eo = { token: localStorage.getItem("userToken") };
       function to(e) {
         return Gr.post(
-          "https://ecommerce.routermisr.com/api/v1/cart",
+          "https://ecommerce.routemisr.com/api/v1/cart",
           { productId: e },
           { headers: eo }
         )
@@ -27928,7 +27928,7 @@
           });
       }
       function no() {
-        return Gr.get("https://ecommerce.routermisr.com/api/v1/cart", {
+        return Gr.get("https://ecommerce.routemisr.com/api/v1/cart", {
           headers: eo,
         })
           .then(function (e) {
@@ -27940,7 +27940,7 @@
       }
       function ro(e, t) {
         return Gr.put(
-          "https://ecommerce.routermisr.com/api/v1/cart/".concat(e),
+          "https://ecommerce.routemisr.com/api/v1/cart/".concat(e),
           { count: t },
           { headers: eo }
         )
@@ -27953,7 +27953,7 @@
       }
       function oo(e) {
         return Gr.delete(
-          "https://ecommerce.routermisr.com/api/v1/cart/".concat(e),
+          "https://ecommerce.routemisr.com/api/v1/cart/".concat(e),
           { headers: eo }
         )
           .then(function (e) {
@@ -27964,7 +27964,7 @@
           });
       }
       function io() {
-        return Gr.delete("https://ecommerce.routermisr.com/api/v1/cart", {
+        return Gr.delete("https://ecommerce.routemisr.com/api/v1/cart", {
           headers: eo,
         })
           .then(function (e) {
@@ -27976,7 +27976,7 @@
       }
       function ao(e, t) {
         return Gr.post(
-          "https://ecommerce.routermisr.com/api/v1/orders/checkout-session/".concat(
+          "https://ecommerce.routemisr.com/api/v1/orders/checkout-session/".concat(
             e,
             "?url=http://localhost:3000"
           ),
@@ -28832,7 +28832,7 @@
         Oi = { token: localStorage.getItem("userToken") };
       function ji(e) {
         return Gr.post(
-          "https://ecommerce.routermisr.com/api/v1/wishlist",
+          "https://ecommerce.routemisr.com/api/v1/wishlist",
           { productId: e },
           { headers: Oi }
         )
@@ -28845,7 +28845,7 @@
       }
       function Ai(e) {
         return Gr.delete(
-          "https://ecommerce.routermisr.com/api/v1/wishlist/".concat(e),
+          "https://ecommerce.routemisr.com/api/v1/wishlist/".concat(e),
           { headers: Oi }
         )
           .then(function (e) {
@@ -28856,7 +28856,7 @@
           });
       }
       function Ti() {
-        return Gr.get("https://ecommerce.routermisr.com/api/v1/wishlist", {
+        return Gr.get("https://ecommerce.routemisr.com/api/v1/wishlist", {
           headers: Oi,
         })
           .then(function (e) {
@@ -28889,7 +28889,7 @@
                       return (
                         (e.next = 2),
                         Gr.get(
-                          "https://ecommerce.routermisr.com/api/v1/products"
+                          "https://ecommerce.routemisr.com/api/v1/products"
                         )
                       );
                     case 2:
@@ -29837,7 +29837,7 @@
                         a(!0),
                         (e.next = 3),
                         Gr.get(
-                          "https://ecommerce.routermisr.com/api/v1/categories"
+                          "https://ecommerce.routemisr.com/api/v1/categories"
                         )
                       );
                     case 3:
@@ -35015,7 +35015,7 @@
                         i(!0),
                         (e.next = 3),
                         Gr.post(
-                          "https://ecommerce.routermisr.com/api/v1/auth/signin",
+                          "https://ecommerce.routemisr.com/api/v1/auth/signin",
                           t
                         ).catch(function (e) {
                           u(
@@ -35153,7 +35153,7 @@
                         r(!0),
                         (e.next = 3),
                         Gr.post(
-                          "https://ecommerce.routermisr.com/api/v1/auth/signup",
+                          "https://ecommerce.routemisr.com/api/v1/auth/signup",
                           t
                         ).catch(function (e) {
                           a(
@@ -35652,7 +35652,7 @@
                         u(!0),
                         (e.next = 3),
                         Gr.get(
-                          "https://ecommerce.routermisr.com/api/v1/products/".concat(
+                          "https://ecommerce.routemisr.com/api/v1/products/".concat(
                             n.productId
                           )
                         )
@@ -35889,7 +35889,7 @@
                       return (
                         a(!0),
                         (e.next = 3),
-                        Gr.get("https://ecommerce.routermisr.com/api/v1/brands")
+                        Gr.get("https://ecommerce.routemisr.com/api/v1/brands")
                       );
                     case 3:
                       (t = e.sent),
@@ -36142,7 +36142,7 @@
                                                 return (0, nn.jsx)(
                                                   "img",
                                                   {
-                                                    src: "https://ecommerce.routermisr.com/products/".concat(
+                                                    src: "https://ecommerce.routemisr.com/products/".concat(
                                                       e
                                                     ),
                                                     alt: "",
@@ -36261,7 +36261,7 @@
                       return (
                         (e.next = 2),
                         Gr.get(
-                          "https://ecommerce.routermisr.com/api/v1/orders/user/".concat(
+                          "https://ecommerce.routemisr.com/api/v1/orders/user/".concat(
                             localStorage.getItem("cartOwner")
                           )
                         )
